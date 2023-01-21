@@ -1,7 +1,9 @@
 # 📅2023-01-17 tue
 
+📖 [アマゾン創業者が部下に繰り返し続けた「過酷な一言」](https://diamond.jp/articles/-/293032)  
+
 ![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
-「　ジェフ・ペゾスは　モックアップの時点で完成度高くないと　企画も通さないらしいぜ。迷惑だよな」  
+「　👆　ジェフ・ペゾスは　モックアップの時点で完成度高くないと　企画も通さないらしいぜ。迷惑だよな」  
 
 ![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
 「　どう迷惑を受けたんだぜ？」  
@@ -624,6 +626,285 @@ Position インスタンスにセットするように書いてみた」
 ![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
 「　次は　リスタート・ボタン　を付けようぜ？」  
 
-📅2023-01-21 sat 00:31
+📅2023-01-21 sat 00:31 end
+
+# 📅2023-01-22 sun 01:34 start
+
+![202301_unity_22-0139--button-1.png](https://crieit.now.sh/upload_images/78687b8432bea2b1de689b029c12b63963cc15a1e794d.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　2020年代の GUI というと Web クライアントや、 Windows デスクトップ・アプリケーションでは 進歩、淘汰の激戦区だが、  
+Unity に付いてる GUI は 1990年代かな、というぐらいクラシックなものなので　あまり気合を入れずに使うぜ」  
+
+![202301_unity_22-0149--restart-button.png](https://crieit.now.sh/upload_images/50c1df4bf970fdd0d3c937f25efa6a3a63cc17061c2a3.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　リスタート・ボタンの見た目は　こんなんでいいんじゃないか？」
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　美術の欠如している　わたしたちは　これでいきましょう」  
+
+![202301_unity_22-0153--judge-manager-clear-1.png](https://crieit.now.sh/upload_images/d9e033a7f670c032b4b81c7f0c35a93e63cc18ed731c5.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`JudgeManager` に `Clear` メソッドを付けるぜ」  
+
+![202301_unity_22-0157--position-clear-1.png](https://crieit.now.sh/upload_images/6ddd934f79d571f7a04970139006e2e263cc1a13069dc.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`Position` の `Clear` メソッドで `moveCount` フィールドを　ゼロ初期化してなかったので　するぜ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　仕込みをしてるんだな」  
+
+![202301_unity_22-0203--game-manager-clear-1.png](https://crieit.now.sh/upload_images/afded1cca00b5fb9e22b1de62444fbe463cc1b282c0ba.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`GameManager` に `Clear` メソッドを付けるぜ。  
+この中で　`Position` インスタンスと、 `JudgeManager` インスタンスの `Clear` メソッドを呼び出すとともに、  
+対局結果のテキストと、盤に被せた半透明の幕のアクティベートのチェックを外して、ゲーム中に存在しない扱いにするぜ」  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　また、 `Start` メソッドで `Clear` メソッドを呼び出した」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　それは要るのか？」  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　シーン・ビューで　テキストの表示のアクティベートのチェックを外すの忘れたりしたまま　リリース　したくないだろ」  
+
+![202301_unity_22-0210--restart-button-event-listener-1.png](https://crieit.now.sh/upload_images/75297f996e3c2b66b190d7b968f2deb163cc1d2fd0114.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　ボタンを押したら、 `Game Manager` ゲーム・オブジェクトの持っている `GameManager` C#スクリプトの `Clear` メソッドが
+呼び出されるように　マウス操作で紐づけるぜ。  
+この技術の名前は　イベント・リスナー（Event Listener）だぜ」  
+
+![202301_unity_22-0220--restart-button-activate-1.png](https://crieit.now.sh/upload_images/960ff4734ed2fa874c4cdf281482561963cc1f569021a.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　リスタート・ボタン自体のアクティベートのチェックを　オン／オフする仕組みを忘れてた　追加しよ」  
+
+![202301_unity_22-0223--restart-button-attach-1.png](https://crieit.now.sh/upload_images/cb9ad218d655d73225ba46413293bae063cc1fcf563a4.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　だんだん　ごつく　なってきたな」  
+
+![202301_unity_22-0225--restart-button-1.png](https://crieit.now.sh/upload_images/c5eda7ca58d37f30211ef5691b0570d263cc2049d4646.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　でも　リスタート・ボタンが出てきたぜ。押してみよ」  
+
+![202301_unity_22-0227--restart.png](https://crieit.now.sh/upload_images/ead782d753e02a782fb7211a04e5ce0f63cc20b97d0dc.png)  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　👆　盤はクリアーされてないぜ？　なぜだぜ？」  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　WPF （ダブリュー・ピー・エフ）の MVVM （エム・ブイ・ブイ・エム）の ViewModel （ビュー・モデル）に慣れた癖で忘れていたが、  
+Unity では データをクリアーしても、 シーンは連動していないのだった」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　これは　ゲーム・プログラミングなのよ。  
+デスクトップ・アプリケーションのような　処理が重たい技術は　流行らないのよ」  
+
+![202301_unity_22-0237--square-texture-1.png](https://crieit.now.sh/upload_images/61794a1c8ab0302cca5de97aa854ca1a63cc23083bc03.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　マスの材質を　緑色の素材に貼り替えたろ」  
+
+![202301_unity_22-0239--game.png](https://crieit.now.sh/upload_images/321e17162027b27e8b09100960d878c463cc2377e299c.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　貼り替わったぜ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　これで　○×ゲームは　卒業かだぜ？」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　まだ　イリーガル・ムーブ　を禁止していないわよ？」
+
+![202301_unity_22-0255--static-validator-1.png](https://crieit.now.sh/upload_images/0f5381ee3c886ecac19851e6fbf3d06263cc287177e3f.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　じゃあ　バリデーター（Validator）を作ればいいだろ。
+そのマスに置けるかどうかだけ　チェックすればいいのかだぜ？」  
+
+![202301_unity_22-0303--square-number-1.png](https://crieit.now.sh/upload_images/92d5be737e7fabe80de4379cee1afe9863cc293aa5ac3.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　あっ、　`Square 0` みたいなゲーム・オブジェクトの名前しか取れね。 `0` みたいなマス番号取れね」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　不便よねえ」
+
+![202301_unity_22-0316--static-helper-1.png](https://crieit.now.sh/upload_images/1a0544f9a279f3230c1301fd39ab03e363cc2c2eefb05.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　じゃあ　ヘルパー関数　作ればいいんだぜ。  
+`GameManager` で　似たようなコード前に作ったから　引っこ抜いて　共通利用できるようにするぜ」  
+
+![202301_unity_22-0319--static-helper-using-1.png](https://crieit.now.sh/upload_images/25ab84d4d7a1a6cd3a9e83ddeaaab04763cc2cc39c532.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　既存のコードは見やすくなるし」  
+
+![202301_unity_22-0322--validation-1.png](https://crieit.now.sh/upload_images/dd6d8e90a9d3159a86525f8a8f0bcce163cc2d944a966.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　新しいコードは書きやすくなる」  
+
+![202301_unity_22-0325--validated.png](https://crieit.now.sh/upload_images/60fe586a47a2db0904567902a2c9be6563cc2e1851f76.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　これで　非合法手　は防げたんじゃないか？」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　`Nought win` のあとに　まだ　`X` を置けるんじゃない？」  
+
+![202301_unity_22-0327--front-cover-validated.png](https://crieit.now.sh/upload_images/45bc60ee82810b1689bd7db0acf8f17c63cc2eaa1ff2f.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　半透明の青い膜が被っていて、　マスはクリックできないから  
+対局終了後に　マスをクリックすることは　でけないぜ」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　じゃあ　いいかあ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　これで　完成か？」  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　コード・レビュー　しようぜ？  
+プログラミングの　へたくそなところがある」  
+
+![202301_unity_22-0338--code-review-1.png](https://crieit.now.sh/upload_images/93c46e9caa50384440e11f96be525a4863cc319c2e606.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　例えば　『駒を置く』は入力だが、　『対局結果を表示する』は出力だぜ。  
+入力メソッドが　出力してるなんて　**イケてないぜ**」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　判断基準は　イケてるか　イケてないか　なのね」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　プログラマーの気分　を　重要視してるんだな。　その点では Ruby に似ているな。お父んのポリシーが　分かってきたぜ」  
+
+![202301_unity_22-0338--code-review-2.png](https://crieit.now.sh/upload_images/dcf063f10bc127633a82b4ac518bdf9e63cc34196c725.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　『出力』の部分を `DoMove` メソッドから外に出したいが、  
+`piece` 変数が `DoMove` メソッドに束縛されているから、 `piece` 変数を 自由変数に変える方法を考えようぜ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　なんだか分からないが　任せたぜ」  
+
+![202301_unity_22-0356--turn-1.png](https://crieit.now.sh/upload_images/c1d5e1b43dc8e561ee02ffb725bc0fab63cc35c039941.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`Position` クラスに 手番（Turn）を持たせようぜ。  
+初期値は `Nought`」  
+
+![202301_unity_22-0407--next-turn-1.png](https://crieit.now.sh/upload_images/195449b0412ed3ed8ed1bd073d34b7dd63cc382bb0e7f.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　手番を追加する `NextTurn` メソッドもいるや。追加しとこ」  
+
+![202301_unity_22-0419--increment-1.png](https://crieit.now.sh/upload_images/1fa124b13275ff6cd3bd126bcad894f863cc3b47d88cc.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　インクリメントも `NextTurn` メソッドの中で　やってまお。  
+`MovesCount` プロパティーのセッター（set）も要らなくなったから、短く書いたろ」  
+
+![202301_unity_22-0424--doMove-1.png](https://crieit.now.sh/upload_images/56a4e1c235b838654a76607f748e856463cc3c3fd58c8.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　これで `DoMove` の中から `piece` 変数が消えた。 代わりに `Position` に依存するようになったぜ」  
+
+![202301_unity_22-0430--update-game-result-view-1.png](https://crieit.now.sh/upload_images/469795d0c7599136285d74061502743a63cc3d9ab5433.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　こうやって `UpdateGameResultView` メソッドに切り分けることがでけたな。  
+しかし `DoMove` メソッドを実行すると `UpdateGameResultView` メソッドまで　実行されてしまうのは　イケてないな」
+
+![202301_unity_22-0435--increment-validation-1.png](https://crieit.now.sh/upload_images/4f9dae601fd513d6b7b9fa01efc982b163cc3ed3d1db7.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　あっ　いけね！  
+対局が終了しているときは　`NextTurn` しないように　バリデーション・チェックしようぜ」  
+
+![202301_unity_22-0455--setup-judge-1.png](https://crieit.now.sh/upload_images/cb10a1947cd056c2cd3508e5d97047c963cc43ad828ce.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`JudgeManagement` クラスの `SetupJudge` メソッドを、  
+変更があったかどうか返すように　変更するぜ」  
+
+![202301_unity_22-0501--dirty-judgement-1.png](https://crieit.now.sh/upload_images/77b0bce7e897089265c514e85b805a9b63cc459f0674d.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　判定に変更があれば `dirtyJudgement` フラグを立て、  
+`dirtyJudgement` フラグが立っているときだけ `UpdateGameResultView` メソッドは働き、  
+働いたら `dirtyJudgement` フラグは下ろす、という風に作るぜ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　めんどくさ」  
+
+![202301_unity_22-0508--update-1.png](https://crieit.now.sh/upload_images/f05cfdfc9b70aeee067b451cbf2bd85063cc466561424.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　これで `UpdateGameResultView` メソッドの呼び出しを  
+`DoMove` メソッドの外に出して、  
+`Update` メソッドの中へ　引っ越すことがでけたぜ」  
+
+![202301_unity_22-0511--game.png](https://crieit.now.sh/upload_images/e9d0130a57419ab5322235a11af424aa63cc47025acfa.png)  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　👆　そんなけ　コードをいじっても　ゲームは何にも変わらないじゃない。  
+コードを　イケてるようにすることに　何の意味があんの？」  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　ワザを安定して出せるようになると、  
+もっと　大きなワザ　を出せるようになる。大きなワザ　を出せるようにするために　コードを掃除してるんだぜ」  
+
+![202301_unity_22-0523--clear-1.png](https://crieit.now.sh/upload_images/2e593ba5feb02e0738cfa2fb4011953963cc4a0e8d1bb.png)  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　👆　`GameManager` クラスの `Clear` メソッドの中で　画面表示を切り替えているのは　掃除しないのかだぜ？」  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　する」  
+
+![202301_unity_22-0530--set-piece-1.png](https://crieit.now.sh/upload_images/88d97e1865734efba49ccdfa518874f963cc4b7c55a46.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`Position` クラスの `SetPiece` メソッドも、変更があったかどうか返すようにしようぜ？」  
+
+![202301_unity_22-0541--dirty-squares-1.png](https://crieit.now.sh/upload_images/e07525efd0469ebda5b7e6f539e0c0b463cc4e4c7c95e.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　マスをクリックして、絵柄に変化があったときだけ `dirtySquares` セットに　マス番号を追加することにするぜ」  
+
+![202301_unity_22-0553--update-square-view-1.png](https://crieit.now.sh/upload_images/15a38f0fb40ec207b0a520bf537ec21e63cc51bc332de.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　これで　`DoMove` メソッドの中から　表示をコントロールするコードは　消えてなくなっただろ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　入力メソッドの中では　出力はしないようにしたんだな」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　`dirtyなんちゃら` フラグが　入力メソッドと　出力メソッドの　橋渡しをしているのね」  
+
+![202301_unity_22-0610--clear-1.png](https://crieit.now.sh/upload_images/a6fbbab7afa09885fd05604f9f33fed463cc5506f12e7.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`GameManager` クラスの `Clear` メソッドの中にあったコードも、 `dirty` フラグを立てるだけで  よくなったぜ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　これで　表示周りのコードの　クリーンナップ　は終わりか？」  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　まだある」  
+
 
 # **// 書きかけ**

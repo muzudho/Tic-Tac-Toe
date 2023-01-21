@@ -69,7 +69,8 @@ class JudgeManager : MonoBehaviour
     /// - 結果は GameResult プロパティに入れます
     /// </summary>
     /// <param name="piece"></param>
-    public void SetupJudge(Pieces piece)
+    /// <returns>判定が変わったか？</returns>
+    public bool SetupJudge(Pieces piece)
     {
         var pos = gameManager.Position;
 
@@ -81,18 +82,30 @@ class JudgeManager : MonoBehaviour
                 pos.GetPiece(winPatterns[num, 2]) == piece)
             {
                 // ３つ並んだ
+                var old = gameResult;
                 gameResult = GameResults.Win;
-                return;
+                return gameResult != old;
             }
         }
 
         if (pos.MovesCount == pos.GetBoardLength() - 1) // インクリメントする前に判定するから -1 する
         {
             //マスを埋め尽くしたなら満局（引き分け）
+            var old = gameResult;
             gameResult = GameResults.Draw;
-            return;
+            return gameResult != old;
         }
 
+        var old1 = gameResult;
+        gameResult = GameResults.None;
+        return gameResult != old1;
+    }
+
+    /// <summary>
+    /// ゲームの初期化
+    /// </summary>
+    public void Clear()
+    {
         gameResult = GameResults.None;
     }
 }

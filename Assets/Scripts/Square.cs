@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +21,13 @@ public class Square : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log($"マウスボタンを押しました {transform.name}");
-        gameManager.DoMove(transform.name);
+        var squareNum = StaticHelper.GetSquareByName(transform.name);
+
+        Debug.Log($"{squareNum} 番マスでマウスボタンを押しました");
+
+        if (StaticValidator.ValidateMove(gameManager.Position, squareNum))
+        {
+            gameManager.DoMove(transform.name);
+        }
     }
 }
