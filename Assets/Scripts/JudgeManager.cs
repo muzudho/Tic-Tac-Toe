@@ -12,13 +12,7 @@ class JudgeManager : MonoBehaviour
     /// <summary>
     /// ‘Î‹ÇŒ‹‰Êi“Çæê—pj
     /// </summary>
-    public GameResults GameResult
-    {
-        get
-        {
-            return gameResult;
-        }
-    }
+    public GameResults GameResult => gameResult;
 
     static readonly int[,] winPatterns = new int[,]
     {
