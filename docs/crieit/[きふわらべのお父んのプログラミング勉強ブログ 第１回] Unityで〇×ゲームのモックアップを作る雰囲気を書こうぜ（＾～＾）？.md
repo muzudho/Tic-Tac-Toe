@@ -1,3 +1,10 @@
+# 教育目的
+
+プログラミング・スキルの普及のために、 **この記事の内容は　改変・転載許可**  
+
+成果物： 📖 [Tic tac toe](https://play.unity.com/mg/other/tic-tac-toe-19)  
+コード： 📖 [Tic-Tac-Toe](https://github.com/muzudho/Tic-Tac-Toe)  
+
 # 📅2023-01-17 tue
 
 📖 [アマゾン創業者が部下に繰り返し続けた「過酷な一言」](https://diamond.jp/articles/-/293032)  
@@ -906,5 +913,107 @@ Unity では データをクリアーしても、 シーンは連動していな
 ![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
 「　まだある」  
 
+![202301_unity_22-0615--update-square-view-1.png](https://crieit.now.sh/upload_images/672ce92be3f8d4c0705ae7af00349f2163cc573604ecc.png)  
 
-# **// 書きかけ**
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`GameObject.Find` メソッドは　処理に時間がかかるらしい。  
+できれば　`Start` メソッドで１回使ったあとは　使わなくて済むようにしたいぜ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　やってくれだぜ」  
+
+![202301_unity_22-0628--go-squares-1.png](https://crieit.now.sh/upload_images/12dccad101ef2a1ddad99cb01eaf263c63cc596e3b9fc.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`GameManager` クラスの `Start` メソッドが呼び出された時点で、`GameObject.Find` を先にしてしまって、  
+ゲーム・オブジェクトをメモリに入れておけばいいぜ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　他に　どこを　クリーンナップ　するんだぜ？」  
+
+![202301_unity_22-0639--accessor-1.png](https://crieit.now.sh/upload_images/2499ffd82d3fa1b280b726a28b989d2863cc5bc683af9.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　例えば `get` アクセッサ―で 変数をリターンしているだけのプロパティなんかは……」  
+
+![202301_unity_22-0639--lambda-1.png](https://crieit.now.sh/upload_images/f48e3580044e3463bd047fb77d8aaebc63cc5c34246ca.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　ラムダ式と同じなんだったら、書き方が短いラムダ式にするとかかな。  
+パフォーマンスに違いがでるのか　知らんけど」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　パフォーマンスの測定をするほどの　速度が必要なアプリケーションじゃないから  
+ちょっとぐらいパフォーマンスが違っても　違いは分かんないわねえ」  
+
+📅2023-01-22 sun 06:45
+
+![202301_unity_22-0650--webgl.png](https://crieit.now.sh/upload_images/dd5c0611c4a2069bc403705dcec376d163cc5edf40669.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　WebGL 形式で　実行ファイルを出力してみようぜ？」  
+
+![202301_unity_22-0655--live-server-1.png](https://crieit.now.sh/upload_images/5820d70f390ed9efa99f7fc3170a006d63cc5f838f6f3.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　Visual Studio Code に `Live Server` エクステンション入れてると　ローカルWebサーバー起ちあがるんで、  
+Tic Tac Toe の `index.html` を開いてみようぜ？」  
+
+![202301_unity_22-0657--unity-webgl-player.png](https://crieit.now.sh/upload_images/a02822505cb829b8b9e81b95a832c81663cc600399cb5.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　開けたな」  
+
+![202301_unity_22-0659--nought-win.png](https://crieit.now.sh/upload_images/016f52d3015877c784babfdcf95c33e963cc603a15235.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　プレイできるぜ」  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　○×ゲームできても　ビデオゲームって感じ　しないけどな」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　２か月 Unity Lesson でビギナーコースを受けて、○×ゲームを作るのに　３日間かかるようでは　気が遠くなるわよね」  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　仕込みが　なんにも無いからな。  
+重要なのは　制作進行を覚えて　素材の発注を見積もることだぜ」  
+
+![202108__character__12--ohkina-hiyoko-futsu2.png](https://crieit.now.sh/upload_images/31f0f35be3a4b6b05ce597c7aab702b763c675227892a.png)  
+「　UI も タイトル画面も 何もかもがなくて ゲーム開発の全体像はまだ見えないわね」  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　まあ、先に進もうぜ」  
+
+📖 [Unity Play](https://play.unity.com/)  
+
+![202301_unity_22-0708--unity-play.png](https://crieit.now.sh/upload_images/2e03353eda777c0aaef26bc50f2bc56563cc628e945c7.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　`Unity Play` という Web サイトがある」  
+
+![202301_unity_22-0710--unity-play-upload.png](https://crieit.now.sh/upload_images/66f72f9e7f507940c520af0c6924c53563cc62df7e773.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　ここには、作ったゲームをアップロードするページがある」  
+
+![202301_unity_22-0711--game-file-1.png](https://crieit.now.sh/upload_images/8fea3b36e8b9abfe086af975a588a62d63cc636b45695.png)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　というわけで、 WebGL のファイルが入ったフォルダーを `.zip` 圧縮し……」  
+
+![202301_unity_22-0718--play-unity.png](https://crieit.now.sh/upload_images/2ab88554a86131ecb1332bd9478ee12963cc64de36293.png)  
+
+📖 [Tic tac toe](https://play.unity.com/mg/other/tic-tac-toe-19)  
+
+![202101__character__31--ramen-tabero-futsu2.png](https://crieit.now.sh/upload_images/5b53e954894672b36c716412a272826b63c674b756465.png)  
+「　👆　アップロード完了。 Play Unity に置いたぜ」  
+
+![202301_unity_22-0721--play-unity-game.png](https://crieit.now.sh/upload_images/8dac93438803f00459ce08cde74dcd2963cc658770762.png)  
+
+![202101__character__28--kifuwarabe-futsu.png](https://crieit.now.sh/upload_images/e846bc7782a0e037a1665e6b3d51b02463c6750a6308a.png)  
+「　👆　まあ　○×ゲーム　しかできないんだけどな」  
+
+📅2023-01-22 sun 07:22 end
+
+＜おわり＞
